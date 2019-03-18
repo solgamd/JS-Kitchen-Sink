@@ -15,9 +15,7 @@ sayHello();
 
 //When called, checks whether user is 21+, gives alert.
 function checkAge(name, age) {
-    if (age >= 21 && age < 100) {
-        alert("Welcome, " + name + "!");
-    } else if (age < 21) {
+    if (age < 21) {
         alert("Sorry " + name + ", you aren't old enough to view this page!")
     }
 };
@@ -39,31 +37,36 @@ for(var i = 0; i < favveg.length; i++) {
 let peeps = [
     {
         name: "Rick",
-        age: 18,
+        age: 18
     },
     {
         name: "Morty",
-        age: 14,
+        age: 14
     },
     {
         name: "Jerry",
-        age: 44,
+        age: 44
     },
     {
         name: "Beth",
-        age: 36,
+        age: 36
     },
     {
         name: "Summer",
-        age: 21,
+        age: 21
     }
 ];
 
-//Executing function checkAge for array "peeps"
+//Executing loop checkAge for array "peeps"
 
 for (let i = 0; i < peeps.length; i++) {
-    console.log(checkAge[peeps]);
 let x = peeps[i].name
 let y = peeps[i].age
 checkAge(x, y);
-}
+};
+
+function getLength(x) {
+    console.log(x.length);
+};
+getLength('Hello World');
+
