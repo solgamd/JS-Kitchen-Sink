@@ -29,53 +29,41 @@ checkAge("James", 18);
 checkAge("John", 17);
 
 //Declaring var of favorite veggies.
-var favveg = ["radish", "carrot", "peas"];
+var favveg = ["squash", "carrot", "peas"];
 
 //Calling list of veggies one by one.
 for(var i = 0; i < favveg.length; i++) {
     console.log(favveg[i]);
 }
-//Declaring array of "kids"
-let kids = [
+//Declaring array of "peeps"
+let peeps = [
     {
-        name: "Blake",
+        name: "Rick",
         age: 18,
     },
     {
-        name: "Jeff",
+        name: "Morty",
         age: 14,
     },
     {
-        name: "Cleo",
+        name: "Jerry",
         age: 44,
     },
     {
-        name: "Jake",
+        name: "Beth",
         age: 36,
     },
     {
-        name: "Jess",
+        name: "Summer",
         age: 21,
     }
 ];
 
-//Executing function checkAge for array "kids"
-for (let i = 0; i < kids.length; i++) {
-    let x = kids[i].name
-    let y = kids[i].age
-    checkAge(x, y);
-}
+//Executing function checkAge for array "peeps"
 
-function getLength(x) {
-    return x.Length;
-}
-getLength("Hello World")
-    console.log(returnValue);
-
-var returnValue = getLength(x);
-
-if (x.length % 2) {
-    alert("The world is nice and even!");
-} else {
-    alert("The world is an odd place!");
+for (let i = 0; i < peeps.length; i++) {
+    console.log(checkAge[peeps]);
+let x = peeps[i].name
+let y = peeps[i].age
+checkAge(x, y);
 }
