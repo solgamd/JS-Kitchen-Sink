@@ -65,8 +65,14 @@ let y = peeps[i].age
 checkAge(x, y);
 };
 
-function getLength(x) {
-    console.log(x.length);
+function getLength(str) {
+    return str.length;
 };
-getLength('Hello World');
 
+let result = getLength("Hello World");
+
+if (result % 2 === 0) {
+    console.log("The world is nice and even!");
+} else {
+    console.log("The world is an odd place!");
+}
